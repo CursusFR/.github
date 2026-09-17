@@ -21,10 +21,11 @@ C'est ce qui sépare Cursus d'un assistant généraliste. Le travail coûteux es
 fait une fois, chaque application le relit sous son angle, et chaque réponse
 cite le passage du cours dont elle vient.
 
-Le site public dessine cet argument plutôt que de l'énoncer : le document au
-centre, les trente et une applications autour.
+Le site public montre les trente et une applications côte à côte, et dessine
+l'argument plutôt que de l'énoncer : le document au centre, les applications
+qui le relisent autour.
 
-![Un import au centre, trente et une applications autour](images/applications.png)
+![Les trente et une applications](images/applications.png)
 
 ## Le modèle
 
