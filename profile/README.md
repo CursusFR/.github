@@ -21,7 +21,10 @@ C'est ce qui sépare Cursus d'un assistant généraliste. Le travail coûteux es
 fait une fois, chaque application le relit sous son angle, et chaque réponse
 cite le passage du cours dont elle vient.
 
-![Grille des applications](images/applications.png)
+Le site public dessine cet argument plutôt que de l'énoncer : le document au
+centre, les trente et une applications autour.
+
+![Un import au centre, trente et une applications autour](images/applications.png)
 
 ## Le modèle
 
