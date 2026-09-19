@@ -1,58 +1,76 @@
 # Cursus
 
-**Toutes vos études sur une seule plateforme.**
+**All of your studies on one platform.**
 
-L'étudiant importe ses cours une fois. Cursus en tire ses fiches, ses
-flashcards, ses examens blancs et son plan de révision, en citant ses propres
-documents plutôt qu'une source inconnue.
+A student imports their courses once. Cursus draws their summary sheets, their
+flashcards, their mock exams and their revision plan out of those courses, and
+cites their own documents rather than an unknown source.
 
-![Page d'accueil de Cursus](images/landing.png)
+![The Cursus home page](images/landing.png)
 
-## L'idée qui structure tout
+## The idea that shapes everything
 
-Les 31 fonctionnalités du produit ne sont pas 31 produits. Ce sont 31 lectures
-différentes du même contenu : le cours de l'étudiant.
+The thirty-six features of the product are not thirty-six products. They are
+thirty-six readings of the same thing: the student's own course.
 
-Fiches, flashcards, QCM, examens blancs, mode urgence avant un partiel,
-prévision des notions qui tomberont, détection des erreurs récurrentes : tout
-part du même corpus, importé et analysé une seule fois.
+Sheets, flashcards, quizzes, mock exams, the panic mode the night before a
+test, a forecast of what the exam will ask, a record of the mistakes that keep
+coming back: all of it starts from one corpus, imported and analysed once.
 
-C'est ce qui sépare Cursus d'un assistant généraliste. Le travail coûteux est
-fait une fois, chaque application le relit sous son angle, et chaque réponse
-cite le passage du cours dont elle vient.
+That is what separates Cursus from a general assistant. The expensive work
+happens once, each application reads it from its own angle, and every answer
+cites the passage of the course it came from.
 
-Le site public montre les trente et une applications côte à côte, et dessine
-l'argument plutôt que de l'énoncer : le document au centre, les applications
-qui le relisent autour.
+![The thirty-six applications](images/applications.png)
 
-![Les trente et une applications](images/applications.png)
+## The product
 
-## Le modèle
+![The courses screen](images/product.png)
 
-Celui d'Odoo : un noyau, et des applications qu'on active selon ses besoins.
-Le noyau porte ce qu'une application n'a pas le droit de faire elle-même :
-les comptes, l'arborescence des études, l'import des documents, la recherche
-dans le corpus et l'accès aux modèles de langage.
+A course is fed once, from a handout, a photo of the board or a recording.
+Everything the student turns in afterwards comes out of it, with the page in
+front of it.
 
-Les frontières entre modules sont vérifiées à la compilation. Un module qui
-contourne le noyau casse le build, pas la production.
+| | |
+|---|---|
+| ![Trades](images/careers.png) | ![After dark](images/dark.png) |
+| Twenty-six trades, the years they ask for, and the applications that carry those years. | Light or dark, following the machine until the student says otherwise. |
 
-## Les dépôts
+<img src="images/phone.png" width="300" alt="Cursus on a phone" />
 
-| Dépôt | Contenu |
+## The model
+
+Odoo's: a kernel, and applications you turn on as you need them. The kernel
+carries what an application is never allowed to do by itself: accounts, the
+tree of studies, document import, search across the corpus and access to the
+language models.
+
+The boundaries between modules are checked at build time. A module that goes
+around the kernel breaks the build, not production.
+
+## What it costs
+
+The free plan is a real week: three generations, a queue, and a fifteen second
+sponsor that gives one back. Everything that never calls a model, half the
+catalogue, stays free and unlimited. Paid plans lift the week and drop the
+queue.
+
+## The repositories
+
+| Repository | What is in it |
 | --- | --- |
-| [`cursus-back`](https://github.com/CursusFR/cursus-back) | L'API. Java 21, Spring Boot, Spring Modulith, PostgreSQL avec pgvector. |
-| [`cursus-app`](https://github.com/CursusFR/cursus-app) | L'application web (Next.js) et l'application mobile (Expo), avec leur socle commun. |
-| [`cursus-landing`](https://github.com/CursusFR/cursus-landing) | Le site public, autonome pour se déployer sans dépendre du produit. |
+| [`cursus-back`](https://github.com/CursusFR/cursus-back) | The API. Java 21, Spring Boot, Spring Modulith, PostgreSQL with pgvector. |
+| [`cursus-app`](https://github.com/CursusFR/cursus-app) | The product: one Expo application, on the web today and in the stores from the same code. |
+| [`cursus-landing`](https://github.com/CursusFR/cursus-landing) | The public site, standing alone so it can deploy without the product. |
 
-La feuille de route des 31 applications est sur le
-[tableau de l'organisation](https://github.com/orgs/CursusFR/projects/6),
-classée par ordre de priorité commerciale : d'abord ce qui déclenche
-l'abonnement, ensuite ce qui fait revenir chaque semaine, enfin ce qui demande
-une masse critique d'utilisateurs.
+The roadmap of the applications is on the
+[organisation board](https://github.com/orgs/CursusFR/projects/6), ordered by
+commercial priority: first what triggers a subscription, then what brings a
+student back every week, and last what needs a crowd to be worth anything.
 
-## L'état aujourd'hui
+## Where it stands
 
-Le noyau est complet et vérifié en exécution. Deux applications sont livrées,
-les fiches de révision et les flashcards en répétition espacée. L'interface
-existe en français et en anglais.
+The kernel is complete and exercised in tests. Thirty-six applications are in
+the catalogue, the tour, the weekly limits, the sponsor and the plans are in
+place, and the interface exists in French and English, in daylight and after
+dark.
