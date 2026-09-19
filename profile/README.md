@@ -38,6 +38,33 @@ front of it.
 
 <img src="images/phone.png" width="300" alt="Cursus on a phone" />
 
+## How it fits together
+
+```mermaid
+flowchart LR
+  site["cursus-landing<br/>the public site"]
+  app["cursus-app<br/>the product, web and mobile"]
+  rest["REST API"]
+  apps["36 applications<br/>fiches · flashcards · mock exams · memoire · ..."]
+  kernel["Kernel<br/>accounts · courses · ingestion · search<br/>models · weekly limits · plans"]
+  pg[("PostgreSQL + pgvector")]
+  files[("Document store")]
+  llm{{"Language, vision and speech models"}}
+
+  site -. "shows the same catalogue" .-> app
+  app -->|"REST, bearer token"| rest
+  rest --> apps
+  apps --> kernel
+  kernel --> pg
+  kernel --> files
+  kernel --> llm
+```
+
+An application never opens a file or calls a model by itself: it goes through
+the kernel, and the build refuses any module that tries. That rule is what
+keeps thirty-six applications from becoming thirty-six little products with
+thirty-six ways of spending money.
+
 ## The model
 
 Odoo's: a kernel, and applications you turn on as you need them. The kernel
