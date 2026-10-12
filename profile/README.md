@@ -1,10 +1,16 @@
 # Cursus
 
-**All of your studies on one platform.**
+**Revise from your own courses.**
 
-A student imports their courses once. Cursus draws their summary sheets, their
-flashcards, their mock exams and their revision plan out of those courses, and
-cites their own documents rather than an unknown source.
+A student imports their courses once. Cursus turns them into revision sheets,
+flashcards, mock exams and a revision plan, and every answer cites the page of
+the course it comes from.
+
+https://github.com/user-attachments/assets/cca2687b-b502-4c67-a9d9-3cdec40d0367
+
+Thirty seconds of the product: a course dropped in, a sheet that cites its
+pages, a card that comes back just before it is forgotten, and a mock exam
+marked out of twenty. The home page plays it in each of its seven languages.
 
 ![The Cursus home page](images/landing.png)
 
@@ -12,11 +18,13 @@ cites their own documents rather than an unknown source.
 
 ![The courses screen](images/product.png)
 
-A course is fed once, from a handout, a photo of the board or a recording.
-Thirty-six applications read it, and every answer cites the passage it came
-from. Nothing that comes out carries a watermark.
+A course is fed once, from a handout, a photo of the board or a recording of
+the lecture. Thirty-six applications read it, and the blue button asks what the
+student came to do: understand, remember, practise, prepare the exam, hand in
+work or organise the year. Every answer cites the passage it came from, and
+nothing that comes out carries a watermark.
 
-![The thirty-six applications](images/applications.png)
+![What do you want to do?](images/applications.png)
 
 |                                                                                                                     |                                                                       |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -27,10 +35,17 @@ from. Nothing that comes out carries a watermark.
 
 ## What it costs
 
-The free plan is a real week: three generations, and a short sponsor that gives
-one back. Everything that never calls a model, half the catalogue, stays free
-and unlimited. Paid plans lift the week and drop the queue. Schools can give
-their students a plan through Campus.
+The free plan stays open all year, without a card: study sheets, flashcards and
+three more applications, three generations a week and up to five more a day for
+a short video, and every other application to try a few times a day. The
+Student plan opens twenty-four applications with no wait, the Pro plan
+thirty-five. The last one, CampusAI, comes with a school's Campus, through
+which a school also gives its students a plan.
+
+## Languages
+
+The site, the app and the Campus speak French, English, Spanish, Portuguese,
+German, Italian, and Arabic laid out right to left.
 
 The roadmap is on the
 [organisation board](https://github.com/orgs/CursusFR/projects/6), ordered by
